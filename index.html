@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To-Do List</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- To-Do CSS -->
+	<link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- Input bar -->
+		<div class="row bar">
+			<form class="col-md-4 offset-md-4">
+				<input id="input-bar"  type="text" placeholder="Add a new task">
+				<button id="save-button" class="btn btn-primary">Add element</button>
+			</form>	
+			<div class="col-md-3 clean-btn">
+				<button id="clean-done-button" class="btn btn-warning">Clean done tasks</button>
+				<button id="clean-all-button" class="btn btn-warning">Clean all tasks</button>
+			</div>
+		</div> <!-- END Input bar -->
+
+		<!-- Checkbox list -->
+		<div class="row">
+			<section class="col-md-6 offset-md-3">
+				<h1>Tasks</h1>
+				<ul id="element-list" class="list-group">
+				</ul>
+			</section>
+		</div> <!-- END Checkbox list -->
+
+	</div> <!-- END Container -->
+
+	<!-- Own Scrip -->
+	<script src='js/todo.js'>
+		
+	</script>
+</body>
+</html>
